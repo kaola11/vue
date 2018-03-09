@@ -1,0 +1,6 @@
+@import '~@/lib/reset.scss';
+.dailyHeader{
+    @include rect(100%,0.44rem);
+    @include text-align();
+    @include line-height(0.44rem);
+}

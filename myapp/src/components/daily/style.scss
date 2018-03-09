@@ -1,0 +1,23 @@
+@import '~@/lib/reset.scss';
+.daily_content{
+    a{
+        display: block;
+        position: relative;
+        @include rect(100%,auto);
+        margin-bottom: 0.1rem;
+        img{
+        @include rect(100%,auto);     
+        }
+        p{
+            position: absolute;
+            @include rect(100%,100%);
+            z-index: 999;
+            top:0;
+            text-align: center;
+            line-height: 1.9rem;
+            color:#fff;
+            font-size:0.2rem;
+            background: rgba(19,1,1,0.2);
+        }
+    }
+}

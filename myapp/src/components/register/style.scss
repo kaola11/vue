@@ -1,0 +1,14 @@
+@import '~@/lib/reset.scss';
+
+.registerBtn{
+    .title{
+        @include rect(100%,1rem);
+        margin:0.1rem;
+        font-size:0.2rem;
+        p{
+            font-size:0.12rem;
+            height:0.4rem;
+            line-height: 0.4rem;
+        }
+    }
+}

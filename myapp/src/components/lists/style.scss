@@ -1,0 +1,61 @@
+@import '~@/lib/reset.scss';
+.lists{
+    .listHeader{
+        @include rect(100%,0.4rem);
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-items();
+        .weight{
+            font-weight: 900;
+        }
+    }
+    .listContent{
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-around);
+        li{
+            @include rect(1.65rem,2.98rem);
+//          padding:0.1rem;
+            img{
+                display: block;
+                border:0;
+                @include rect(100%,2rem);
+            }
+            p{
+                @include rect(100%,auto);
+                
+            }
+            p:nth-of-type(1){
+                @include rect(0.7rem,0.16rem);
+                @include background-color(#dd2828);
+                @include text-color(#fff);
+                @include font-size(0.12rem);
+                @include text-align();
+                @include line-height(0.16rem);
+            }
+            p:nth-of-type(2),p:nth-of-type(3){
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                @include font-size(0.12rem);
+                
+            }
+            p:nth-of-type(2){
+                font-weight: 900;
+            }
+            p:nth-of-type(4){
+                @include text-color(#dd2828);
+                span{
+                    @include text-color(#ccc);
+                    text-decoration: line-through;
+                }
+            }
+            time{
+                float:right;
+            }
+        }
+        
+    }
+}
+

@@ -1,0 +1,47 @@
+@import '~@/lib/reset.scss';
+
+
+    .home_header{
+        @include rect(100%,0.4rem);
+        @include flexbox();
+        @include align-items();
+        @include justify-content(space-around);
+        .login{
+            @include rect(0.56rem,0.4rem);
+            @include text-align();
+            @include line-height(0.4rem);
+            a{
+                @include font-size(0.12rem);
+                @include text-color(#000)
+            }
+        }
+        .search{
+            @include rect(2.66rem,0.4rem);
+            @include background-color(#f6f6f6);
+            @include rect(2.66rem,0.4rem);
+            @include font-size(0.16rem);
+            @include text-align();
+            @include line-height(0.4rem);
+            a{
+                i,span{
+                    @include text-color(#ccc);
+                    
+                }
+            }
+        }
+        
+    
+
+.iconfont{
+    font-size:0.2rem;
+}
+.shop {
+    a{       
+        display: inline-block;
+        @include rect(0.56rem,0.4rem);
+        @include font-size(0.4rem);
+        @include text-align() ;
+        @include text-color(#000)
+    }
+}
+}

@@ -1,0 +1,13 @@
+@import '~@/lib/reset.scss';
+
+.listsHeader{
+    .mint-header{
+        @include background-color(#fff);
+        @include text-color(#000);
+    }
+    .mint-header-title{
+        font-size:16px;
+        font-weight: 900;
+        
+    }
+}

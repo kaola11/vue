@@ -1,0 +1,63 @@
+@import '~@/lib/reset.scss';
+.mint-swipe{
+    @include rect(98%,2.10rem);
+    margin:4px 15px;
+    img{
+       width:100%;
+       height:100%; 
+    }
+}
+
+.content-h{
+    @include rect(100%,0.44rem);
+    @include flexbox();
+    @include align-items();
+    @include justify-content(space-around)
+    li{
+        width:0.4rem;
+        height:100%;
+        float:left;
+        line-height: 0.4rem;
+        text-align: center;
+    }
+}
+
+.coupon{
+    img{
+        width:100%;
+        overflow-y: auto;
+    }
+}
+.newgoods{
+     margin:0 auto;
+     @include rect(95%,auto);
+    a{
+        position: relative;
+        @include rect(100%,2.07rem);
+        
+    }
+    h2{
+        @include rect(100%,0.44rem);
+        @include line-height(0.44rem); 
+        @include font-size(0.2rem);
+        font-weight:400;
+        padding:0.1rem;
+    }
+    img{
+        @include rect(100%,auto);
+        @include text-align();
+        margin-top:0.1rem;
+    }
+    .text{
+        @include rect(100%,auto);
+        position: absolute;
+        top:40px;
+        z-index: 999;
+        @include text-color(#fff);
+        font-weight: 700;
+        background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.55));
+        p{
+             margin-left:0.1rem;
+        }
+    }
+}

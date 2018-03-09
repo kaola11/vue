@@ -1,0 +1,45 @@
+@import '~@/lib/reset.scss';
+.user_main{
+    .mint-cell-wrapper{
+        border-top:0 ;
+    }
+    .title{
+        @include rect(100%,1rem);
+        margin:0.1rem;
+        font-size:0.2rem;
+        p{
+            font-size:0.12rem;
+            height:0.4rem;
+            line-height: 0.4rem;
+        }
+    }
+    .mint-cell{
+//      margin-bottom: 0.2rem;
+//      @include border(1px 0 1px 0 , #ccc,solid);
+    }
+    .mint-button{
+        background: #ccc;
+    }
+    .mint-button-text{
+        .iconfont{
+            color:#fff;
+        }
+    }
+    .messiage{
+        @include rect(90%,1rem);
+        margin:0 auto;
+        .registerBtn{
+            margin-bottom: 0.2rem;
+        }
+    }
+    .sharList{
+        @include rect(100%,4rem);
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-items();
+        .iconfont{
+            font-size:0.3rem;
+        }
+    }
+    
+}

@@ -1,0 +1,52 @@
+@import '~@/lib/reset.scss';
+
+
+.car_header{
+    @include rect(100%,4rem);
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items();
+    .iconfont{
+        font-size:0.5rem
+    }
+    a{
+        display: block;
+        border:solid 1px #ccc;
+        width:100px;
+        height:0.4rem;
+        text-align: center;
+        line-height: 0.4rem;
+        color:#000
+    }
+}
+.table{
+        margin:0 auto;
+        @include rect(100%,auto);
+        
+    tr{
+        @include rect(100%,0.2rem);
+//      @include flexbox();
+//      @include justify-content(space-around);
+        margin-bottom: 0.1rem;
+        td{
+            img{
+                display: block;
+                @include rect(0.75rem,0.6rem);
+                
+            }
+            text-align:center;
+            width:0.75rem;
+            white-space: nowrap;
+            text-overflow:ellipsis; 
+            overflow:hidden;
+
+            
+//          display: -webkit-box;
+//          -webkit-box-orient: vertical;
+//          -webkit-line-clamp: 1;//表示行数
+//          overflow: hidden;
+            
+        }
+    }
+}

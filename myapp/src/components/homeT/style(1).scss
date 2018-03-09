@@ -1,0 +1,26 @@
+@import '~@/lib/reset.scss';
+.con_header{
+    h2{
+        margin:20px;
+        display: inline-block;
+    }
+    ul{
+        width:100%;
+        overflow: hidden;
+    }
+    li{
+        float:left;
+        height:0.4rem;
+        background: #f9f9f9;
+        border:solid 1px #ccc;
+        padding:0 10px;
+        line-height: 0.4rem;
+        margin:5px;
+        a{
+        color:#484850
+        }
+    
+    }
+    
+}
+

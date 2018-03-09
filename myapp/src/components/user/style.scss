@@ -1,0 +1,53 @@
+@import '~@/lib/reset.scss';
+
+
+.main_content{
+    ul{
+        @include rect(100%,1rem);
+        @include flexbox();
+        @include justify-content(space-around);
+        li{
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            .iconfont{
+                @include font-size(0.3rem)
+            }
+        }
+    }
+    .userHeader{
+    position: relative;
+    @include rect(100%,2.26rem);
+    .header_top{
+        @include rect(100%,2.26rem);
+        @include border(0 0 1px 0,#ccc,solid);
+        box-shadow:0px 2px 5px #F7F7F7;
+        @include text-align();
+        position: absolute;
+        top:0.3rem;
+        .circel{
+            margin-left:150px;
+            @include border(0 0 2px 0,#fff,solid);
+            box-shadow:0px 2px 2px #CECECE;
+            @include rect(0.8rem,0.8rem);
+            @include border-radius(50%);
+            @include background-color(#f6f6f6)
+        }
+    }
+    .login_re{
+        @include rect(1rem,0.4rem);
+        @include background-color(#000);
+        position: absolute;
+        left:140px;
+        text-align: center;
+        line-height:0.4rem;
+        @include font-size(0.15rem);
+        bottom:-0.05rem;
+        z-index: 999;
+        a{
+            @include text-color(#fff);
+        }
+    }
+}
+
+}
